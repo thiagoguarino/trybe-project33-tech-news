@@ -1,9 +1,13 @@
 import requests
 import time
+from parsel import Selector
 
 
 # Task 1
 def fetch(url):
+    """
+        makes a HTTP Request to a URL and gets its content
+    """
 
     headers = {"user-agent": "Fake user-agent"}
 
@@ -20,7 +24,11 @@ def fetch(url):
 
 # Requisito 2
 def scrape_updates(html_content):
-    """Seu código deve vir aqui"""
+    """
+       scrapes Trybe's main News Page to obtain URL links to specific articles.
+    """
+    selector = Selector(html_content)
+    return selector.css("main[class=site-main] article::attr(href)").getall()
 
 
 # Requisito 3
