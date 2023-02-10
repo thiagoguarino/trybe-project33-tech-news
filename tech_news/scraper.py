@@ -8,7 +8,6 @@ def fetch(url):
     """
         makes a HTTP Request to a URL and gets its content
     """
-
     headers = {"user-agent": "Fake user-agent"}
 
     time.sleep(1)
@@ -28,7 +27,12 @@ def scrape_updates(html_content):
        scrapes Trybe's main News Page to obtain URL links to specific articles.
     """
     selector = Selector(html_content)
-    return selector.css("main[class=site-main] article::attr(href)").getall()
+    news_url_list = selector.css(".entry-title a::attr(href)").getall()
+
+    if not news_url_list:
+        return []
+
+    return news_url_list
 
 
 # Requisito 3
