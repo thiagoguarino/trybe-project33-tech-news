@@ -21,10 +21,10 @@ def fetch(url):
         return None
 
 
-# Requisito 2
+# Task 2
 def scrape_updates(html_content):
     """
-       scrapes Trybe's main News Page to obtain URL links to specific articles.
+        scrape Trybe's main News Page to obtain a list of URL links to Articles
     """
     selector = Selector(html_content)
     news_url_list = selector.css(".entry-title a::attr(href)").getall()
@@ -37,7 +37,16 @@ def scrape_updates(html_content):
 
 # Requisito 3
 def scrape_next_page_link(html_content):
-    """Seu código deve vir aqui"""
+    """
+        scrape Trybe's main News Page to obtain a URL link to next news page
+    """
+    selector = Selector(html_content)
+    next_page_url = selector.css("a.next::attr(href)").get()
+
+    if not next_page_url:
+        return None
+
+    return next_page_url
 
 
 # Requisito 4
