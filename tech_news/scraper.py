@@ -89,14 +89,12 @@ def get_tech_news(amount):
 
     url = "https://blog.betrybe.com"
 
-    # news_counter = 0
     while len(get_news_list) < amount:
         fetch_main_page = fetch(url)
         news_url_list_on_page = scrape_updates(fetch_main_page)
         for new_url in news_url_list_on_page:
             fetch_article_page = fetch(new_url)
             get_news_list.append(scrape_news(fetch_article_page))
-            # news_counter += 1
             if (len(get_news_list) == amount):
                 break
         url = scrape_next_page_link(fetch_main_page)
