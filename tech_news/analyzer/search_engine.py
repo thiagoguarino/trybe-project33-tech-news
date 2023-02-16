@@ -1,13 +1,57 @@
-# Requisito 7
+from tech_news.database import db
+from datetime import datetime
+
+
+# task 7
 def search_by_title(title):
-    """Seu código deve vir aqui"""
+    """
+        this function will search news on database by title
+    """
+    news_list = list()
+
+    get_news = db.news.find({"title": {"$regex": title, "$options": 'i'}})
+
+    for news in get_news:
+        news_tuple = (news["title"], news["url"])
+        news_list.append(news_tuple)
+
+    return news_list
 
 
-# Requisito 8
-def search_by_date(date):
-    """Seu código deve vir aqui"""
+# task 8
+def search_by_date(date_input):
+    """
+        this function will search news on database by date
+    """
+    news_list = list()
+
+    try:
+        original_date_format = datetime.strptime(date_input, '%Y-%m-%d')
+        new_date_format = original_date_format.strftime('%d/%m/%Y')
+
+        get_news = db.news.find({"timestamp": {"$regex": new_date_format}})
+
+        for news in get_news:
+            news_tuple = (news["title"], news["url"])
+            news_list.append(news_tuple)
+
+        return news_list
+    except ValueError:
+        raise ValueError("Data inválida")
 
 
-# Requisito 9
+# task 9
 def search_by_category(category):
-    """Seu código deve vir aqui"""
+    """
+        this function will search news on database by category
+    """
+    news_list = list()
+
+    get_news = db.news.find({"category": {
+        "$regex": category, "$options": 'i'}})
+
+    for news in get_news:
+        news_tuple = (news["title"], news["url"])
+        news_list.append(news_tuple)
+
+    return news_list
