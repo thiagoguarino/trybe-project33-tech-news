@@ -5,7 +5,7 @@ from collections import Counter
 # task 10
 def top_5_categories():
     """
-    this function will list the top 5 most common categories on news
+    this function will list the top 5 most common news categories on database
     """
     categories_raw_list = list()
     categories_output_list = list()
