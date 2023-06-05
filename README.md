@@ -1,4 +1,4 @@
-## Trybe Project 32 - Inventory Report
+## Trybe Project 33 - Tech News
 
 
 ## PROJECT OVERVIEW
