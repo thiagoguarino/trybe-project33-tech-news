@@ -99,7 +99,7 @@
 
   This project uses a MongoDB database called "tech_news". The news will be stored in a collection called "news". there are some previously built functions ready on the file `tech_news/database.py` that will help you with the development of the app. Don't alter the functions on this file.
 
-  To run MongoDB via Docker: `docker-compose up -d mongodb` no terminal.
+  To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal.
 
   With the DB running, the apps module will access it correctly. Import the module `tech_news/database.py` and call the functions contained inside.
   
