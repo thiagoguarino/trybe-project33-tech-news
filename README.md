@@ -101,8 +101,7 @@
 
   To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal.
 
-  With the DB running, the apps module will access it correctly. Import the module `tech_news/database.py` and call the functions contained inside.
-  
-  Remember that MongoDB uses port 27017. If there's another service using this port, consider disabling it.
+  With the DB running, the apps module will access it correctly. Import the module `tech_news/database.py` and call the functions contained inside. Remember that MongoDB uses port 27017. If there's another service using this port, consider disabling it.
 
+  To execute the app and display the console Menu type: `tech-news-analyzer`
   </details>
