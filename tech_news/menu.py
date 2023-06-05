@@ -8,6 +8,7 @@ from tech_news.analyzer.search_engine import (
 from tech_news.analyzer.ratings import top_5_categories
 
 
+# file authorship: thiago guarino
 def news_by_quantity():
     user_input = input("Digite quantas notícias serão buscadas: ")
     return get_tech_news(int(user_input))

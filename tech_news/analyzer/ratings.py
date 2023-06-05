@@ -1,6 +1,8 @@
 from tech_news.database import find_news
 from collections import Counter
 
+# file authorship: thiago guarino
+
 
 # task 10
 def top_5_categories():

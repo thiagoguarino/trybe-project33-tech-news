@@ -4,6 +4,8 @@ from parsel import Selector
 from bs4 import BeautifulSoup
 from .database import create_news
 
+# file authorship: thiago guarino
+
 
 # Task 1
 def fetch(url):

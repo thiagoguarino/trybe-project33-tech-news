@@ -1,6 +1,8 @@
 from tech_news.database import db
 from datetime import datetime
 
+# file authorship: thiago guarino
+
 
 # task 7
 def search_by_title(title):

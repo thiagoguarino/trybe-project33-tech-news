@@ -3,6 +3,8 @@ from tech_news.analyzer import reading_plan
 from unittest.mock import patch
 import pytest
 
+# file authorship: thiago guarino
+
 
 @pytest.fixture
 def find_news_mock():
