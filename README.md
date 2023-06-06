@@ -7,6 +7,18 @@
 
   This project is a console app that fetches data about news scraped from a [tech blog](https://blog.betrybe.com/). This project has Unit Tests and Bonus Tasks as well. Stack: Python3, Pytest, Docker, MongoDB.
 
+  <details>
+    <summary>
+      <b>skills developed building the product</b>
+    </summary>
+    <ul>
+      <li>code our own modules and importing them in other files</li>
+      <li>Apply Web Scraping</li>
+      <li>extract data from HTML</li>
+      <li>store scraped data on local database</li>
+    </ul>
+  </details>
+
   <strong>FYI: every file that does not have a code authorship comment, was originally made by Trybe Bootcamp.</strong>
 
 ## PROJECT TASKS
