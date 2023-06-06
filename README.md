@@ -5,7 +5,7 @@
 
   This is project #3 of the Computer Science Module at [Trybe Bootcamp](https://www.betrybe.com/).
 
-  This project is a console app that fetches data about news scraped from a [tech blog](https://blog.betrybe.com/). This project has Unit Tests and Bonus Tasks as well. Stack: Python3, Pytest, MongoDB.
+  This project is a console app that fetches data about news scraped from a [tech blog](https://blog.betrybe.com/). This project has Unit Tests and Bonus Tasks as well. Stack: Python3, Pytest, Docker, MongoDB.
 
   <strong>FYI: every file that does not have a code authorship comment, was originally made by Trybe Bootcamp.</strong>
 
@@ -99,7 +99,7 @@
 
   This project uses a MongoDB database called "tech_news". The news will be stored in a collection called "news". there are some previously built functions ready on the file `tech_news/database.py` that will help you with the development of the app. Don't alter the functions on this file.
 
-  To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal.
+  To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal. You can also use your preferred BDMS for MongoDB locally.
 
   With the DB running, the apps module will access it correctly. Import the module `tech_news/database.py` and call the functions contained inside. Remember that MongoDB uses port 27017. If there's another service using this port, consider disabling it.
 
