@@ -99,9 +99,9 @@
 
   This project uses a MongoDB database called "tech_news". The news will be stored in a collection called "news". there are some previously built functions ready on the file `tech_news/database.py` that will help you with the development of the app. Don't alter the functions on this file.
 
-  To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal. You can also use your preferred BDMS for MongoDB locally.
+  To run MongoDB via Docker: `docker-compose up -d mongodb` on terminal. You can also use your preferred BDMS, like DBeaver for MongoDB locally.
 
   With the DB running, the apps module will access it correctly. Import the module `tech_news/database.py` and call the functions contained inside. Remember that MongoDB uses port 27017. If there's another service using this port, consider disabling it.
 
-  To execute the app and display the console Menu type: `tech-news-analyzer`
+  To execute the app & display the console Menu type: `tech-news-analyzer` on your terminal on project's root folder.
   </details>
