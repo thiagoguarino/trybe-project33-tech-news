@@ -9,7 +9,7 @@
 
   <details>
     <summary>
-      <b>skills developed building the product</b>
+      <b>skills developed coding the project</b>
     </summary>
     <ul>
       <li>code our own modules and importing them in other files</li>
