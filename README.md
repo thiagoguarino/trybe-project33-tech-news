@@ -1,5 +1,6 @@
 ## Trybe Project 33 - Tech News
 
+- MADE BY [Thiago Guarino](https://www.linkedin.com/in/thiago-guarino/)
 
 ## PROJECT OVERVIEW
 
