@@ -1,8 +1,8 @@
 ## Trybe Project 33 - Tech News
 
-- MADE BY [Thiago Guarino](https://www.linkedin.com/in/thiago-guarino/)
-
 ## PROJECT OVERVIEW
+
+  **MADE BY [Thiago Guarino](https://www.linkedin.com/in/thiago-guarino/)**
 
   This is project #3 of the Computer Science Module at [Trybe Bootcamp](https://www.betrybe.com/).
 
