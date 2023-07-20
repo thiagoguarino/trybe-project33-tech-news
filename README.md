@@ -37,7 +37,7 @@
 2 - create the function scrape_updates | :heavy_check_mark:
 3 - create the function scrape_next_page_link | :heavy_check_mark:
 4 - create the function scrape_news | :heavy_check_mark:
-5 - create the function get_tech_news para obter as notícias! | :heavy_check_mark:
+5 - create the function get_tech_news | :heavy_check_mark:
 6 - Test class ReadingPlanService | :heavy_check_mark:
 7 - create the function search_by_title | :heavy_check_mark:
 8 - create the function search_by_date | :heavy_check_mark:
